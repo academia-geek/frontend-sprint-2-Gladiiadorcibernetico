@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# 👋 Bienvenido al Reto 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Para hacer este reto, necesitas una comprensión básica de React y Styled Components. Buscamos que logres evidenciar los conocimientos esenciales para realizar Aplicaciones de una sola página - SPA**
 
-## Available Scripts
+# 📝 Descripción General del Reto 1
 
-In the project directory, you can run:
+El reto consiste en constuir un producto web teniendo como referencia un diseño previo y debes lograr que se parezca lo más posible al diseño que fue suministrado.
 
-### `npm start`
+El objetivo es usar CSS con componentes con Styled Components en el cual se ponga en práctica tus nociones de CSS y conocer distintas herramientas que permiten agilizar el diseño de tu producto web en React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Styled Components](https://styled-components.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+En la zona de **Recursos** vas a encontrar un enlace externo con los requerimientos de diseño y técnicos que debes cumplir para la entrega de este reto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📚 Recursos
 
-### `npm run build`
+[Recursos Reto 1](https://drive.google.com/drive/folders/1siOxRtfq5zHnFHqrYfgevbcI3PtuXo4t?usp=sharing) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Desplegando tu proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Hay muchas formas de alojar su proyecto de forma gratuita, Algunas opciones son:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Surge](https://surge.sh/)
 
-### `npm run eject`
+## ✅ Entrega del Reto 1
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para realizar la entrega de esta actividad debe realizar los siguientes pasos:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Crear un `Issue` llamado **Entrega-Frontend-Sprint2-Reto1**
+2. Recuerda trabajar sobre este repositorio, es decir, toda la evidencia de código de la solución a este reto debe estar en tu carpeta **reto-1**
+3. Agregar en el `Issue` la documentación técnica de la manera en que le diste solución a tu reto.
+4. Generar la URL de despliegue y relacionarla en el `Issue` **Entrega-Frontend-Sprint2-Reto1**
+    
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
