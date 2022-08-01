@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
-import { Div6, Div7, INPUT, H1, P, BtnNe, FORM, Section2 } from "../styles/styles"
+import { Div6, Div7, INPUT, H1, P, BtnNe, Section2 } from "../styles/styles"
 import axios from 'axios'
+
 
 const url = "http://localhost:3005/data"
 
 class Register extends Component {
 
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
 
     this.state = {
       data: [],
-      textnombre: '',
-      textmail: '',
-      texttelefono: '',
-      textcontraseña: '',
+      textnombre: "",
+      textmail: "",
+      texttelefono: "",
+      textcontraseña: "",
     
 loader:false,
     } }
@@ -27,48 +28,46 @@ loader:false,
           loader:true
         })
       })
+      this.handleSubmit()
  }
     ////////////////consumo api
     componentDidMount(){
       this.peticionGet()
        }
-    peticionGet = async ()=>{
-     let {data} = await axios.get(url)
-        console.log(data)
-    }
+
+            peticionGet = async ()=>{
+            let {data} = await axios.get(url)
+                console.log(data)
+            }
 
   
-
-
-
-
-
    handleChangeName=({target})=>{
        this.setState({ textnombre: target.value })};
-  handleChangeEmail=(e)=>{
-        this.setState({ textmail: e.target.value })};
-  handleChangeTelefono=(e)=>{
-       this.setState({ texttelefono: e.target.value })};
-  handleChangeContraseña=(e)=>{
-        this.setState({ textcontraseña: e.target.value });
+  handleChangeEmail=({target})=>{
+        this.setState({ textmail: target.value })};
+  handleChangeTelefono=({target})=>{
+       this.setState({ texttelefono: target.value })};
+  handleChangeContraseña=({target})=>{
+        this.setState({ textcontraseña: target.value });
          console.log(this.state.textcontraseña)  }
 
 
   handleSubmit = (e) => {
     e.preventDefault();
     
-
-
     axios.post(url,  
     
-   {   nombre: this.state.textnombre,
-      mail: this.state.textmail,
-      telefono: this.state.texttelefono,
-      contraseña: this.state.textcontraseña
+   { id:'', 
+     name: this.state.textnombre,
+      email: this.state.textmail,
+      phone: this.state.texttelefono,
+      password: this.state.textcontraseña,
+      coins: 0,
+   
   }
     )
     .then(res => {
-    console.log(res);
+    
     console.log(res.data);
      })
   }

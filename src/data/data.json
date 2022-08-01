@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "nombre": "Esteban",
-      "mail": "gilabertesteban2022@gmail.com",
-      "telefono": "4444",
-      "contraseña": "3333",
+      "name": "Esteban",
+      "email": "gilabertesteban2022@gmail.com",
+      "phone": "4444",
+      "password": "3333",
       "id": 10
     }
   ]

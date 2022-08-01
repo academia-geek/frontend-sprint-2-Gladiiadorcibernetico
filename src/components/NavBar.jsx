@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import {Container} from 'react-bootstrap';
 import {Navbar} from 'react-bootstrap';
-import { BsReception4 } from "react-icons/bs";
-import { BsBatteryFull } from "react-icons/bs";
 import { AiOutlineWifi } from "react-icons/ai";
 import { Div2 } from '../styles/styles';
+import image from "../Imagenes/general/Battery.png"
+import image2 from "../Imagenes/general/signal.png"
+import image3 from "../Imagenes/general/Wifi.png"
 
  class NavBa extends Component {
   render() {
@@ -16,9 +17,9 @@ import { Div2 } from '../styles/styles';
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               <Div2>  
-                <BsReception4/>
-                <AiOutlineWifi/>
-                <BsBatteryFull/>
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+                <img src={image} alt="" />
               
               </Div2>
             </Navbar.Text>
