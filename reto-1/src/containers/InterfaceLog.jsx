@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Div7, Div6,H1 ,INPUT,P,BtnNe, Footer} from '../styles/styles';
+import { Div7, Div6,H1 ,INPUT,P,BtnNe, Footer} from '../styles/styles'
 import axios from 'axios'
 
-const url = "https://github.com/Gladiiadorcibernetico/F12-Api/blob/main/data.json"
+
+const url = "http://localhost:3005/data"
 
 class InterfaceLogin extends Component {
 
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
 
         this.state = {
             data: [],
@@ -27,15 +28,14 @@ class InterfaceLogin extends Component {
                 loader: true
             })
         })
-      
+       this.peticionGet()
     }
     ////////////////consumo api
-    componentDidMount() {
-        this.peticionGet()
-    }
+   
     peticionGet = async () => {
-        let { data } = await axios.get(url)
+        let  {data}  = await axios.get(url)
         this.setState({data : data})
+        console.log(data)
     }
 
 
@@ -48,25 +48,25 @@ class InterfaceLogin extends Component {
 handleSubmit = (e) => {
     e.preventDefault();
     
-  
-   
-      let telefon = this.state.texttelefono;
-     let contraseña = this.state.textcontraseña;
+     let phone = this.state.texttelefono
+     let password = this.state.textcontraseña
 
+    let filtrado = this.state.data.find(element  => element >phone)
 
-
-    let filtrado = this.state.data.find(element  => element > telefon)
+    console.log(phone)
+    console.log(password)
     console.log(filtrado)
-    let contraseñauser = filtrado.contraseña
-    let phoneuser = filtrado.telefono
-
-    if(contraseña == contraseñauser && telefon == phoneuser){
-        alert('usuario y contraseña correctos')
-    }else{
-        alert('Usuario o contraseña incorrecta')
-    }
   
+    let contraseñauser = filtrado.password
+    let phoneuser = filtrado.phone
 
+    if(password == contraseñauser && phone == phoneuser){
+      localStorage.setItem( 'user',  JSON.stringify(filtrado))
+        window.location = '/HomeUser'
+    }else{
+         alert('Usuario o contraseña incorrecta')
+    };
+  
   }
 
 

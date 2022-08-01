@@ -7,6 +7,11 @@ import InterfaceGoals from '../containers/InterfaceGoals';
 import EnterCourses from '../containers/EnterCourses';
 import Register from '../containers/Register';
 import InterfaceLogin from '../containers/InterfaceLog';
+import HomeUsers from '../containers/HomeUser'
+import PageCourses from '../containers/PageCourses';
+import Profile from '../containers/Profile';
+import DataAcount from '../containers/DataAcount';
+import InterfaceCourse from '../containers/InterfaceCourse';
 
  class AppRoutes extends Component {
   render() {
@@ -21,7 +26,11 @@ import InterfaceLogin from '../containers/InterfaceLog';
             <Route path="/EnterCourses" element={<EnterCourses/>} />
             <Route path="/EnterUser" element={<InterfaceLogin/>} />
             <Route path="/CreateAcount" element={<Register/>} />
-         
+            <Route path="/HomeUser" element={<HomeUsers/>} />
+            <Route path="/HomeCourses" element={<PageCourses/>} />
+            <Route path="/Profile" element={<Profile/>} />
+            <Route path="/DataAcount" element={<DataAcount/>} />
+            <Route path="/InterfaceCourse" element={<InterfaceCourse/>} />
             </Routes>
         </BrowserRouter>    
     )
