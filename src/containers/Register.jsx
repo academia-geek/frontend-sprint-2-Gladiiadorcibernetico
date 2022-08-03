@@ -3,7 +3,7 @@ import { Div6, Div7, INPUT, H1, P, BtnNe, Section2 } from "../styles/styles"
 import axios from 'axios'
 
 
-const url = "http://localhost:3005/data"
+const url = "https://apiuserscmd.herokuapp.com/data"
 
 class Register extends Component {
 
